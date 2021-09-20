@@ -8,12 +8,12 @@ const Next = ({element, computer, Score, setScore, PlayAgain}) =>{
     const [computerResult, setComputerResult] = useState()
     const [WinLose, setWinLose] = useState('')
 
-
     useEffect(() => {
         selecImg(element, setElement)
         selecImg(computer, setComputerResult)
         ScoreLogic(element, computer, Score, setScore, setWinLose)
     }, [])
+    // eslint-disable-next-line
 
     return(
         <section className="NextContainer">

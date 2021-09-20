@@ -2,7 +2,8 @@
   position: relative;
   width: 80%;
   margin: 0 auto;
-  margin-top: 13vh;
+  margin-top: 18vh;
+  max-width: 330px;
   img{
     width: 100%;
   }
@@ -13,7 +14,7 @@
   button:nth-child(2) {
     border: 13px solid #EDA411;
     top: -27%;
-    left: 25%;
+    left: 29%;
   }
   button:nth-child(3) {
     border: 13px solid #5573ED;
