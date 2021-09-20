@@ -1,6 +1,6 @@
 .buttonContainer{
     border-radius: 50%;
-    background: red;
+    background: #DDDCDB;
     width: 120px;
     height: 120px;
     border: none;
@@ -8,4 +8,19 @@
         width: 60%;
         height: 60%;
     }
+}
+.scissors{
+    border: 13px solid  #EDA411;
+}
+.paper{
+    border: 13px solid #5573ED;
+}
+.rock{
+    border: 13px solid #E53E5A;
+}
+.lizard{
+    border: 13px solid #8F5AEC;
+}
+.spock{
+    border: 13px solid #4EBDCE;
 }

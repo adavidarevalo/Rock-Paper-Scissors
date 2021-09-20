@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {selecImg, ScoreLogic} from './ResultLogic'
+import Button from "./Button"
+import "../styles/components/Next.scss"
 
 const Next = ({element, computer, Score, setScore, PlayAgain}) =>{
     const [yourElement, setElement] = useState()
@@ -14,21 +16,18 @@ const Next = ({element, computer, Score, setScore, PlayAgain}) =>{
     }, [])
 
     return(
-        <section>
-            <div>
-                <div>
-                    <img src={yourElement} alt='you picked'/>
-                </div>
+        <section className="NextContainer">
+            <div className="Conatiner">
+                <Button picture={yourElement} name={element}/>
                 <h2>you picked</h2>
             </div>
-            <div>
-                <div>
-                    <img src={computerResult} alt='you picked'/>
-                </div>
+            <div className="Conatiner">
+                <Button picture={computerResult} name={computer}/>
                 <h2>the house picked</h2>
             </div>
             <p>{WinLose}</p>
             <button
+            className="PlayAgain"
             onClick={PlayAgain}
             >Play Again</button>
         </section>

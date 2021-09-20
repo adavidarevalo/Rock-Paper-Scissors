@@ -10,7 +10,7 @@ import "../styles/components/ComplexSwitch.scss"
 
 const ComplexSwitch = ({selectElement}) =>{
     return(
-        <section class="ContainerComplex">
+        <section className="ContainerComplex">
             <img src={pentagon} alt='pentagon'/>
             <Button picture={scissors} selectElement={selectElement} name='scissors'/>
             <Button picture={paper} selectElement={selectElement} name='paper'/>

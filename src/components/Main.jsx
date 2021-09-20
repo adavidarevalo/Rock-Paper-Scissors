@@ -26,10 +26,16 @@ const Main = () =>{
         setElement('')
     }
     return(
-        <section class="mainContainer">
+        <section className="mainContainer">
             <MakerContainer Score={Score}/>
             {element === '' && computer === '' ?(
+                <>
                 <SimpleSwitch selectElement={selectElement}/>
+                <div className="MainNavigation ButtonsNavigation">
+                   <Link to='/complex'>Hard</Link>
+                   <RulesModal rules={simpleRules}/>
+                </div>
+                </>
             ):(
                 <Next 
                 element={element}
@@ -39,8 +45,6 @@ const Main = () =>{
                 PlayAgain={PlayAgain}
                 />
             )}
-            <RulesModal rules={simpleRules}/>
-            <Link to='/complex'>Simple Game</Link>
         </section>
     )
 }

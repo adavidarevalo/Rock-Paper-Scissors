@@ -8,7 +8,7 @@ import Button from './Button'
 
 const SimpleSwitch = ({selectElement}) =>{
     return(
-        <section class='containerPlay'>
+        <section className='containerPlay'>
             <img src={triangle} alt='figure'/>
             <Button picture={paper} selectElement={selectElement} name='paper'/>
             <Button picture={scissors} selectElement={selectElement} name='scissors'/>

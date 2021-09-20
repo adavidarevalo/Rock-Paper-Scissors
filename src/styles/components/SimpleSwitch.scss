@@ -3,27 +3,44 @@
     margin: 0 auto;
     position: relative;
     margin-top: 80px;
-    height: 300px ;
+    height: 300px;
     img{
         width: 100%;
     }
+    button{
+        box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.2);
+        animation: zoomIn 1s both;
+    }
     button:nth-child(2){
-        border: 13px solid  #516be5;
+        border: 13px solid  #5573ED;
         position: absolute;
         left: -10px;
         top: -40px;
     }
     button:nth-child(3){
-        border: 13px solid  yellow;
+        border: 13px solid  #EDA411;
+        animation-delay:.5s;
         position: absolute;
         right: -10px;
         top: -40px;
     }
     button:nth-child(4){
-        border: 13px solid  white;
+        border: 13px solid #E53E5A;
+        animation-delay:1s;
         position: absolute;
         right: 0px;
         left: 30%;
         top: 56%;
     }
 }
+
+@keyframes zoomIn {
+0% {
+opacity: 0;
+transform: scale3d(.3, .3, .3);
+}
+50% {
+opacity: 1;
+}
+} 
+    

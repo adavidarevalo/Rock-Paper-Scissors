@@ -5,6 +5,8 @@ import Next from './Next'
 import RulesModal from './RulesModal'
 import rulesBonus from '../assets/images/rulesBonus.svg'
 import {Link} from 'react-router-dom'
+import "../styles/components/Complex.scss"
+
 
 const Complex = () => {
     const [Score, setScore] = useState(0)
@@ -24,7 +26,7 @@ const Complex = () => {
         setElement('')
     }
     return(
-        <section class="mainContainer">
+        <section className="mainContainer">
            <MakerContainer Score={Score}/>
            {element === '' && computer === '' ?(
                 <ComplexSwitch selectElement={selectElement}/> 
@@ -37,8 +39,10 @@ const Complex = () => {
                 PlayAgain={PlayAgain}
                 />
             )}
-            <RulesModal rules={rulesBonus}/>
-            <Link to='/'>Easy</Link>
+            <div className="ButtonsNavigation">
+                <Link to='/'>Easy</Link>
+                <RulesModal rules={rulesBonus}/>
+            </div>
         </section>
     )
 }

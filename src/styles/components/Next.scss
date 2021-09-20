@@ -1,0 +1,47 @@
+.NextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    .Conatiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 26px;
+        h2{
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+    p{
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-block: 20px;
+        animation: zoomIn 1s both infinite;
+    }
+    .PlayAgain{
+        background: white;
+        border: none;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        color: rgb(25,37,70);
+    }
+}
+
+@keyframes zoomIn {
+0% {
+opacity: .6;
+transform: scale(1);
+}
+50% {
+opacity: 1;
+transform: scale(1.2);
+}
+} 

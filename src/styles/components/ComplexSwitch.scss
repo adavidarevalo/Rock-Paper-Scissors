@@ -8,30 +8,45 @@
   }
   button{
     position: absolute;
+    animation: zoomIn 1s both;
   }
   button:nth-child(2) {
-    border: 13px solid yellow;
+    border: 13px solid #EDA411;
     top: -27%;
     left: 25%;
   }
   button:nth-child(3) {
-    border: 13px solid #516be5;
+    border: 13px solid #5573ED;
+    animation-delay:.5s;
     top: 11%;
     right: -11%;
   }
   button:nth-child(4) {
-    border: 13px solid red;
+    border: 13px solid #E53E5A;
+    animation-delay:1s;
     top: 69%;
     left: 58%;
   }
   button:nth-child(5) {
-    border: 13px solid #5f3cfd;
+    border: 13px solid #8F5AEC;
+    animation-delay:1.5s;
     top: 69%;
     right: 58%;
   }
   button:nth-child(6) {
-    border: 13px solid #52ceff;
+    border: 13px solid #4EBDCE;
+    animation-delay:2s;
     top: 11%;
     left: -11%;
   }
 }
+
+@keyframes zoomIn {
+0% {
+opacity: 0;
+transform: scale3d(.3, .3, .3);
+}
+50% {
+opacity: 1;
+}
+} 

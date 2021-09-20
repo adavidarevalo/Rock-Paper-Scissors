@@ -5,10 +5,10 @@ import '../styles/components/MarkerContainer.scss'
 const MarkerContainer = ({Score}) =>{
     return(
         <header>
-            <div class='titles'>
+            <div className='titles'>
               <p>Rock Paper Scissors</p>
             </div>
-            <div class='score'>
+            <div className='score'>
                 <h2>Score</h2>
                 <p>{Score}</p>
             </div>
