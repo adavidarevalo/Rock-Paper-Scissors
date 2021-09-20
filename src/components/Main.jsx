@@ -26,7 +26,7 @@ const Main = () =>{
         setElement('')
     }
     return(
-        <section>
+        <section class="mainContainer">
             <MakerContainer Score={Score}/>
             {element === '' && computer === '' ?(
                 <SimpleSwitch selectElement={selectElement}/>

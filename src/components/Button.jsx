@@ -7,7 +7,11 @@ const Button = ({picture, selectElement, name}) => {
         class='buttonContainer'
         onClick={()=>{selectElement(name)}}
         >
-          <img src={picture} />
+          <img 
+          src={picture} 
+          alt="Sing" 
+          class="Image"
+          />
         </button>
     )
 }

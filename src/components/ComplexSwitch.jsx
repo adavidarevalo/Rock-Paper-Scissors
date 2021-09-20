@@ -6,11 +6,11 @@ import paper from '../assets/images/paper.svg'
 import scissors from '../assets/images/scissors.svg'
 import lizard from '../assets/images/lizard.svg'
 import spock from '../assets/images/spock.svg'
-
+import "../styles/components/ComplexSwitch.scss"
 
 const ComplexSwitch = ({selectElement}) =>{
     return(
-        <section>
+        <section class="ContainerComplex">
             <img src={pentagon} alt='pentagon'/>
             <Button picture={scissors} selectElement={selectElement} name='scissors'/>
             <Button picture={paper} selectElement={selectElement} name='paper'/>

@@ -24,7 +24,7 @@ const Complex = () => {
         setElement('')
     }
     return(
-        <section>
+        <section class="mainContainer">
            <MakerContainer Score={Score}/>
            {element === '' && computer === '' ?(
                 <ComplexSwitch selectElement={selectElement}/> 
@@ -38,7 +38,7 @@ const Complex = () => {
                 />
             )}
             <RulesModal rules={rulesBonus}/>
-            <Link to='/'>Simple Game</Link>
+            <Link to='/'>Easy</Link>
         </section>
     )
 }

@@ -1,0 +1,37 @@
+.ContainerComplex {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 13vh;
+  img{
+    width: 100%;
+  }
+  button{
+    position: absolute;
+  }
+  button:nth-child(2) {
+    border: 13px solid yellow;
+    top: -27%;
+    left: 25%;
+  }
+  button:nth-child(3) {
+    border: 13px solid #516be5;
+    top: 11%;
+    right: -11%;
+  }
+  button:nth-child(4) {
+    border: 13px solid red;
+    top: 69%;
+    left: 58%;
+  }
+  button:nth-child(5) {
+    border: 13px solid #5f3cfd;
+    top: 69%;
+    right: 58%;
+  }
+  button:nth-child(6) {
+    border: 13px solid #52ceff;
+    top: 11%;
+    left: -11%;
+  }
+}
