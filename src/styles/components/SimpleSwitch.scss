@@ -1,0 +1,29 @@
+.containerPlay{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+    height: 300px ;
+    img{
+        width: 100%;
+    }
+    button:nth-child(2){
+        border: 13px solid  #516be5;
+        position: absolute;
+        left: -10px;
+        top: -40px;
+    }
+    button:nth-child(3){
+        border: 13px solid  yellow;
+        position: absolute;
+        right: -10px;
+        top: -40px;
+    }
+    button:nth-child(4){
+        border: 13px solid  white;
+        position: absolute;
+        right: 0px;
+        left: 30%;
+        top: 56%;
+    }
+}

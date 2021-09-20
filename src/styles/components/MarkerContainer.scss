@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-inline: 25px;
+    border: 2px solid rgb(158, 170, 201);
+    border-radius: 5px;
+    padding: 10px 15px;
+    .titles{
+        p{
+            text-transform: uppercase;
+            margin: 0px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            width: 50px;
+            line-height: 15px;
+        }
+    }
+    .score{
+        background: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        h2{
+            font-size: .9rem;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 2rem;
+            margin: 0px;
+            font-weight:200;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+    }
+}
