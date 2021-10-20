@@ -14,8 +14,10 @@ const customStyles = {
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      width: "80%",
-      margin: "0 auto"
+      width: "50%",
+      margin: "0 auto",
+      maxHeight: '500px',
+      maxWidth: '250px'
     },
   };
 
